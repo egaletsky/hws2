@@ -47,18 +47,19 @@
     line-height: 20px;
     letter-spacing: 0em;
     align-self: flex-start;
+    position: relative;
 
 }
 
 .messageText:after {
     content: '';
-    position: relative;
-    left: 20px; bottom: -1px; /* Положение треугольника */
-    border: 10px solid transparent;
-    border-bottom: 10px solid rgba(0, 0, 0, 0.94);
-
-
+    position: absolute;
+    right: -24px;
+    bottom: -10px;
+    border: 14px solid transparent;
+    border-bottom: 15px solid #0066CC;
 }
+
 
 .time {
     font-family: Montserrat;

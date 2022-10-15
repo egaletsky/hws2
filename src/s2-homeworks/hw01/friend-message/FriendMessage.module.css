@@ -49,9 +49,11 @@
 .friendText:after {
     content: '';
     position: relative;
-    left: 0px; bottom: 0px; /* Положение треугольника */
-    /*border: 20px solid transparent;*/
-    border-bottom: 20px solid #000000;
+    left: -28px;
+    bottom: -10px;
+    border: 20px solid transparent;
+    z-index: -1;
+    border-bottom: 20px solid #F5F7FB;
 
 }
 
