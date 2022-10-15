@@ -14,6 +14,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-right: 20px;
 }
 
 .friendText {
@@ -23,12 +24,6 @@
     color: #000000;
     border-radius: 10px;
     padding: 10px;
-
-
-}
-
-.friendText:after {
-
 }
 
 .friendName {
@@ -37,7 +32,7 @@
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0em;
-
+    align-self: flex-start;
 
 }
 
@@ -47,7 +42,16 @@
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
+    align-self: flex-start;
 
+}
+
+.friendText:after {
+    content: '';
+    position: relative;
+    left: 0px; bottom: 0px; /* Положение треугольника */
+    /*border: 20px solid transparent;*/
+    border-bottom: 20px solid #000000;
 
 }
 
