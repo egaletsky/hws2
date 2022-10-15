@@ -26,7 +26,7 @@
     background: #0066CC;
     color: #FFFFFF;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 10px;
 
 }
 
@@ -52,10 +52,11 @@
 
 .messageText:after {
     content: '';
-    position: relative; /* Абсолютное позиционирование */
-    left: 20px; bottom: 0px; /* Положение треугольника */
+    position: relative;
+    left: 20px; bottom: -1px; /* Положение треугольника */
     border: 10px solid transparent;
-    border-bottom: 10px solid #0066CC;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.94);
+
 
 }
 
