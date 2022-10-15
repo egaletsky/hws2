@@ -1,11 +1,26 @@
 .App {
     --header_height: 60px;
+    width: 960px;
+    margin: 0 auto;
+
 }
 
 .hw {
-
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #D9D9D9;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
+
 .hwTitle {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 40px;
 
 }
