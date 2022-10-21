@@ -23,6 +23,7 @@ export type MessageType = {
     message:{
         text:string
         time:string
+
     }
 }
 
