@@ -1,6 +1,7 @@
 import React, {ChangeEvent, ChangeEventHandler, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from './HW3';
+import user from '../hw08/User';
 
 
 type GreetingContainerPropsType = {
@@ -64,7 +65,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const totalUsers = users.length //+ need to fix
-    const lastUserName = 'ffdf'
+    const lastUserName = users.length?users[users.length-1].name:''
         //totalUsers? users.at(-1).name : ''// need to fix
 
     return (
