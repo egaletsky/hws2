@@ -1,7 +1,7 @@
 import React, {ChangeEvent, ChangeEventHandler, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from './HW3';
-import user from '../hw08/User';
+
 
 
 type GreetingContainerPropsType = {
@@ -29,6 +29,8 @@ export const pureOnBlur = (name: string, setError: (s:string)=>void) => { // е�
 }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: ()=>void) => { // если нажата кнопка Enter - добавить
+
+
     if(e.key==='Enter'){
         addUser()
     }
