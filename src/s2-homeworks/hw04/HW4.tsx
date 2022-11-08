@@ -9,6 +9,7 @@ import Stand from './Stand'
 * 4 - сделать стили в соответствии с дизайном
 * */
 
+
 const HW4 = () => {
     return (
         <div id={'hw4'}>
