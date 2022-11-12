@@ -1,8 +1,24 @@
 .burgerMenuIcon {
+    margin-left: 20px;
 }
 
 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    background: #f4f6fa;
+    height: 60px;
 }
 
 .header h1 {
+
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-right: 20px;
+
+
+
 }

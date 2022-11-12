@@ -1,29 +1,66 @@
 .sidebar {
+  display:none;
+  background: #f4f6fa;
+  width: 320px;
+  z-index: 2;
+  height: 100%;
+  position: absolute;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #000000;
 }
 
 .sidebar.open {
+
+  display:flex;
+  flex-direction: column;
+  padding-left:20px;
+  padding-top:20px;
+
 }
 
 .background {
 }
 
 .nav {
+  display:flex;
+  flex-direction: column;
+  padding-top:20px;
+  gap:30px;
+
 }
 
+a {
+  text-decoration:none
+}
 .nav a {
+  color:#000000
 }
 
 .nav a:hover {
+
+  color:#58ACFF
 }
 
 .nav a.active {
+  color:#0059B2;
+
 }
 .close {
+  width: 30px;
+  background: #f4f6fa;
+  border:none;
 }
 
 .close img {
 }
 
 .active{
-  color:red;
+  color:#0059B2;
 }
