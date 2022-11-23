@@ -6,6 +6,8 @@
 }
 
 .span {
+    display: inline-block;
+    height:31px;
 
     font-family: 'Montserrat';
     font-style: normal;
