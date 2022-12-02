@@ -1,9 +1,30 @@
 .select {
+
+    appearance: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    padding: 5px;
+    width: 180px;
+    border-radius: 2px;
+    border: 1px solid #C2C2C2
 }
 
 .select:focus {
+    outline: none;
+    width: 180px;
+    border-radius: 2px;
+    border: 1px solid #C2C2C2
 }
 
 
 .option:hover {
+
+    width: 180px;
+    border-radius: 2px;
+    color: red;
+    border: 1px solid #C2C2C2
 }
