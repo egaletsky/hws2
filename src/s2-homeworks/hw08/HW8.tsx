@@ -47,6 +47,7 @@ const HW8 = () => {
         setCurrentSort('down')
     }
     const check18 = () => {
+        setPeople(initialPeople)
         setPeople(
             homeWorkReducer(initialPeople, {type: 'check', payload: 18})
         ) // совершеннолетние
