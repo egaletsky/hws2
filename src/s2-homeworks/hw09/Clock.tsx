@@ -14,14 +14,14 @@ function Clock() {
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
         const id: number = window.setInterval(() => {
-            setDate(new Date(Date.now() + 60*1000))
+            setDate(new Date(Date.now() + 2*60*1000))
         }, 1000)
         setTimerId(id)
     }
 
     const stop = () => {
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
-        setDate(new Date(Date.now()+ 60*1000))
+        setDate(new Date(Date.now()+ 2*60*1000))
         clearInterval(timerId)
         setTimerId(undefined)
     }
