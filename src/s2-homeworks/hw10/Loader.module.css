@@ -1,3 +1,19 @@
 .loader {
-    /*свг и/или анимация*/
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+    background-color: #1142a2;
+    /*color: #00cc22;*/
+}
+
+@keyframes animloader {
+    0% {
+        box-shadow: -72px 0 #FFF inset;
+    }
+    100% {
+        box-shadow: 48px 0 #FFF inset;
+    }
 }
