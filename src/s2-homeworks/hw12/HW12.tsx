@@ -43,6 +43,10 @@ const HW12 = () => {
                     id={'hw12-select-theme'}
                     className={s.select}
                     // сделать переключение тем
+                    options={themes}
+                    value={themeId}
+                    onChangeOption={change}
+
 
                 />
             </div>
