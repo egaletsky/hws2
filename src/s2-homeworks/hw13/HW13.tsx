@@ -43,14 +43,13 @@ const HW13 = () => {
             })
             .catch((e) => {
                 // дописать ERR_NETWORK ERR_BAD_REQUEST 400
-                debugger
+
                 if(e.code === 'ERR_BAD_RESPONSE'){
                     setCode(`Код ${e.response.status}!`)
                     setImage(error500)
                     setText(e.response.data.errorText)
                     setInfo(e.response.data.info)
                 }
-
 
 
 
@@ -82,6 +81,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info==='...loading'}
 
 
                     >
@@ -92,6 +92,7 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info==='...loading'}
 
                     >
                         Send false
@@ -101,6 +102,7 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
+                        disabled={info==='...loading'}
 
                     >
                         Send undefined
@@ -110,6 +112,7 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
+                        disabled={info==='...loading'}
 
                     >
                         Send null
