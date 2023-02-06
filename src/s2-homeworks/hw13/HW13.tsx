@@ -42,16 +42,13 @@ const HW13 = () => {
 
             })
             .catch((e) => {
-                // дописать ERR_NETWORK ERR_BAD_REQUEST 400
-
+                // дописать
                 if(e.code === 'ERR_BAD_RESPONSE'){
                     setCode(`Код ${e.response.status}!`)
                     setImage(error500)
                     setText(e.response.data.errorText)
                     setInfo(e.response.data.info)
                 }
-
-
 
                 if(e.code === 'ERR_BAD_REQUEST'){
                     setCode(`Код ${e.response.status}!`)

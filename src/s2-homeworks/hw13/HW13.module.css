@@ -1,22 +1,52 @@
 .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+
+
 }
 
 .responseContainer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:20px;
+
 }
 
 .imageContainer {
+
 }
 
 .image {
+    width: 300px
+
 }
 
 .textContainer{
+    display: flex;
+    flex-direction: column;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: #000000;
+    margin:10px;
 }
 
 .code {
+    font-size: 30px;
+    line-height: 36.57px;
 }
 
 .text {
+    font-size: 16px;
+    line-height: 19.5px;
 }
 .info {
+    font-size: 16px;
+    line-height: 19.5px;
 }
