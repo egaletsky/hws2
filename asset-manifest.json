@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/hws2/static/css/main.491bb03b.css",
-    "main.js": "/hws2/static/js/main.6e522b1b.js",
+    "main.js": "/hws2/static/js/main.1fba3ca9.js",
     "static/js/787.66cb4309.chunk.js": "/hws2/static/js/787.66cb4309.chunk.js",
     "static/media/200.svg": "/hws2/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
+    "static/media/error.svg": "/hws2/static/media/error.5a3135f381b00b53044eff200e725391.svg",
+    "static/media/400.svg": "/hws2/static/media/400.8baa1b795048b6fa13ff8d30800aa1b1.svg",
     "static/media/404.svg": "/hws2/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/closeOutline.svg": "/hws2/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/editIcon.svg": "/hws2/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
@@ -11,11 +13,11 @@
     "index.html": "/hws2/index.html",
     "static/media/burger.svg": "/hws2/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
     "main.491bb03b.css.map": "/hws2/static/css/main.491bb03b.css.map",
-    "main.6e522b1b.js.map": "/hws2/static/js/main.6e522b1b.js.map",
+    "main.1fba3ca9.js.map": "/hws2/static/js/main.1fba3ca9.js.map",
     "787.66cb4309.chunk.js.map": "/hws2/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.491bb03b.css",
-    "static/js/main.6e522b1b.js"
+    "static/js/main.1fba3ca9.js"
   ]
 }
