@@ -34,24 +34,38 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
-                setCode('Код 200!')
+                setCode(`Код ${res.status}!`)
                 setImage(success200)
+                setText(res.data.errorText)
+                setInfo(res.data.info)
                 // дописать
 
             })
             .catch((e) => {
                 // дописать ERR_NETWORK ERR_BAD_REQUEST 400
-               // debugger
-                if(e.code === 'ERR_NETWORK'){
-                    setCode('Unknown')
-                    setImage(errorUnknown)
-                    setInfo('Error')
+                debugger
+                if(e.code === 'ERR_BAD_RESPONSE'){
+                    setCode(`Код ${e.response.status}!`)
+                    setImage(error500)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
                 }
 
+
+
+
                 if(e.code === 'ERR_BAD_REQUEST'){
-                    setCode('Код 400!')
+                    setCode(`Код ${e.response.status}!`)
                     setImage(error400)
-                    setInfo('Error')
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                }
+
+                if(e.code === 'ERR_NETWORK'){
+                    setCode(`Error!`)
+                    setImage(errorUnknown)
+                    setText(e.message)
+                    setInfo(e.name)
                 }
 
             })
