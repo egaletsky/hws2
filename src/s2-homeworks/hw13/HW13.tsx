@@ -40,7 +40,19 @@ const HW13 = () => {
 
             })
             .catch((e) => {
-                // дописать
+                // дописать ERR_NETWORK ERR_BAD_REQUEST 400
+               // debugger
+                if(e.code === 'ERR_NETWORK'){
+                    setCode('Unknown')
+                    setImage(errorUnknown)
+                    setInfo('Error')
+                }
+
+                if(e.code === 'ERR_BAD_REQUEST'){
+                    setCode('Код 400!')
+                    setImage(error400)
+                    setInfo('Error')
+                }
 
             })
     }
@@ -56,6 +68,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
+
 
                     >
                         Send true
