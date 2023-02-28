@@ -31,13 +31,13 @@ const HW14 = () => {
     const [techs, setTechs] = useState<string[]>([])
 
     const sendQuery = (value: string) => {
+
         setLoading(true)
         getTechs(value)
             .then((res) => {
                 // делает студент
-
                 // сохранить пришедшие данные
-
+                res && setTechs(res.data.techs)
                 //
             })
     }
