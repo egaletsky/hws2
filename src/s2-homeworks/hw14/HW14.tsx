@@ -38,9 +38,9 @@ const HW14 = () => {
                 // делает студент
                 // сохранить пришедшие данные
                 res && setTechs(res.data.techs)
-                //
-            })
-        //setLoading(false)
+                //setLoading(false)
+            }).finally(()=>setLoading(false))
+
     }
 
     const onChangeText = (value: string) => {
