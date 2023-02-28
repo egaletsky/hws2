@@ -40,6 +40,7 @@ const HW14 = () => {
                 res && setTechs(res.data.techs)
                 //
             })
+        //setLoading(false)
     }
 
     const onChangeText = (value: string) => {
