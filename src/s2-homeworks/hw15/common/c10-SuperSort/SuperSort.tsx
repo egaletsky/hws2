@@ -1,9 +1,14 @@
 import React from 'react'
+import {FaSortUp} from '@react-icons/all-files/fa/FaSortUp';
+import {FaSortDown} from '@react-icons/all-files/fa/FaSortDown';
+import {TiArrowUnsorted} from '@react-icons/all-files/ti/TiArrowUnsorted';
+import {green} from '@mui/material/colors';
+
 
 // добавить в проект иконки и импортировать
-const downIcon = '[\\/]'
-const upIcon = '[/\\]'
-const noneIcon = '[--]'
+const downIcon = <FaSortUp/>
+const upIcon = <FaSortDown/>
+const noneIcon = <TiArrowUnsorted/>
 
 export type SuperSortPropsType = {
     id?: string
@@ -31,6 +36,7 @@ const SuperSort: React.FC<SuperSortPropsType> = (
 
     const onChangeCallback = () => {
         onChange(pureChange(sort, down, up))
+
     }
 
     const icon = sort === down
@@ -40,17 +46,14 @@ const SuperSort: React.FC<SuperSortPropsType> = (
             : noneIcon
 
     return (
-        <span
+        <span style={{backgroundColor: green['500']}}
             id={id + '-sort-' + value}
             onClick={onChangeCallback}
         >
-            {/*сделать иконку*/}
-            {/*<img*/}
-            {/*    id={id + '-icon-' + sort}*/}
-            {/*    src={icon}*/}
-            {/*/>*/}
-
-            {icon} {/*а это убрать*/}
+            <img
+                id={id + '-icon-' + sort}
+                src={icon.props.src}
+            />
         </span>
     )
 }

@@ -65,9 +65,11 @@ const HW15 = () => {
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
 
-        // setPage(
-        // setCount(
+         setPage(newPage)
+         setCount(newCount)
+         sendQuery({page: page, count: count})
 
+        //setSearchParams({page: page, count: count})
         // sendQuery(
         // setSearchParams(
 
@@ -88,6 +90,7 @@ const HW15 = () => {
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
+
         sendQuery({page: params.page, count: params.count})
         setPage(+params.page || 1)
         setCount(+params.count || 4)

@@ -16,10 +16,13 @@
 
 .row {
     display: flex;
+    background-color: white;
+    border-bottom: 1px solid;
 }
 
 .rowHeader {
     display: flex;
+    background-color: #E5E5E5;
 }
 
 .loading {

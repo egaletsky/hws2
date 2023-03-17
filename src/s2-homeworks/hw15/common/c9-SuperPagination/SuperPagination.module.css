@@ -1,11 +1,13 @@
 .pagination {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .text1 {
-
+        margin: 0px 10px;
 }
 
 .text2 {
-
+    margin: 0px 10px;
 }
